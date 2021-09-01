@@ -7,9 +7,9 @@ module.exports = (...args) => {
 				return new Proxy({}, {
 					get: (that, prop) => {
 						if(prop == "exec") {
-							return () => {
+							return (...params) => {
 								return new Promise((resolve) => {
-									const command = args.join(" ");
+									const command = args.concat(params).join(" ");
 
 									const output = [];
 
