@@ -13,8 +13,6 @@ repeat
 	command=json.decode(io.read())
 
 	if command['type'] == 'command' then
-		io.write(command['command'])
-
 		core.console(command['command'])
 
 		local response = {}
