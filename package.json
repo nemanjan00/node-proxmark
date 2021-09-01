@@ -1,0 +1,10 @@
+{
+  "name": "node-proxmark3",
+  "version": "0.0.0",
+  "description": "Node.js library for proxmark3",
+  "main": "src/index.js",
+  "repository": "https://github.com/nemanjan00/node-proxmark3.git",
+  "author": "nemanjan00 <nemanjan00@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
