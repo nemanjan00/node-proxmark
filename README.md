@@ -12,7 +12,7 @@ Node.js library for proxmark3.
 
 ## Example
 
-```
+```javascript
 const client = require("node-proxmark3").client;
 
 client("path_to_client_executable").then(client => {
