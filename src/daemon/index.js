@@ -2,16 +2,18 @@ const spawn = require("child_process").spawn;
 const path = require("path");
 const events = require("events");
 
-const proxmarkClientPath = path.resolve(__dirname ,"../../../pm-alpha/pm3");
-
 module.exports.createDaemon = (...args) => {
 	const daemon = {
 		_child: undefined,
 
 		_events: new events(),
 
-		_start: () => {
+		_proxmarkClientPath: undefined,
+
+		_start: (proxmarkClientPath) => {
 			return new Promise((resolve, reject) => {
+				daemon._proxmarkClientPath = proxmarkClientPath;
+
 				daemon._startChild();
 
 				daemon.on("started", () => {
@@ -23,7 +25,7 @@ module.exports.createDaemon = (...args) => {
 		},
 
 		_startChild: () => {
-			daemon._child = spawn(proxmarkClientPath, [
+			daemon._child = spawn(daemon._proxmarkClientPath, [
 				"-c",
 				"script run interpreter",
 				"-i"

@@ -15,7 +15,7 @@ Node.js library for proxmark3.
 ```
 const client = require("node-proxmark3").client;
 
-client().then(client => {
+client("path_to_client_executable").then(client => {
 	client.command.lf.search.exec().then(output => {
 		console.log(output);
 	});
