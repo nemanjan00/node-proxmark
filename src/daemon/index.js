@@ -38,7 +38,8 @@ module.exports.createDaemon = (...args) => {
 
 				dataLines.forEach(line => {
 					daemon._events.emit("line", {
-						line
+						line,
+						source: "stderr"
 					});
 				});
 			});
@@ -57,7 +58,8 @@ module.exports.createDaemon = (...args) => {
 						daemon._events.emit(type, message);
 					} catch(e) {
 						daemon._events.emit("line", {
-							line
+							line,
+							source: "stdout"
 						});
 					}
 				});
