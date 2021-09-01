@@ -6,9 +6,16 @@ Node.js library for proxmark3.
 
 <!-- vim-markdown-toc GFM -->
 
+* [Install](#install)
 * [Example](#example)
 
 <!-- vim-markdown-toc -->
+
+## Install
+
+```bash
+yarn add node-proxmark3
+```
 
 ## Example
 
