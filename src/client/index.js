@@ -6,6 +6,7 @@ module.exports = (...args) => {
 			const getCommandProxy = (args) => {
 				return new Proxy({}, {
 					get: (that, prop) => {
+
 						if(prop == "exec") {
 							return (...params) => {
 								return new Promise((resolve) => {
@@ -18,10 +19,10 @@ module.exports = (...args) => {
 									};
 
 									const endListener = () => {
-										resolve(output.join("\n"));
-
 										client.removeEventListener("line", listener);
 										client.removeEventListener("command_end", endListener);
+
+										resolve(output.join("\n"));
 									};
 
 									client.on("line", listener);
@@ -35,15 +36,17 @@ module.exports = (...args) => {
 							};
 						}
 
-						args.push(prop);
+						const newArgs = args || [];
 
-						return getCommandProxy(args);
+						newArgs.push(prop);
+
+						return getCommandProxy(newArgs);
 					}
 				})
 			};
 
 			const prox = {
-				command: getCommandProxy([]),
+				command: getCommandProxy(),
 			};
 
 			resolve(prox);

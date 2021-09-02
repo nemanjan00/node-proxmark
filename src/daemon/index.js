@@ -80,7 +80,7 @@ module.exports.createDaemon = (...args) => {
 		},
 
 		removeEventListener: (...args) => {
-			return daemon._events.removeEventListener(...args);
+			return daemon._events.removeListener(...args);
 		}
 	};
 
