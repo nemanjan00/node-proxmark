@@ -1,4 +1,5 @@
 const daemon = require("../daemon");
+const command = require("../command");
 
 module.exports = (...args) => {
 	return new Promise((resolve, reject) => {
@@ -8,32 +9,7 @@ module.exports = (...args) => {
 					get: (that, prop) => {
 
 						if(prop == "exec") {
-							return (...params) => {
-								return new Promise((resolve) => {
-									const command = args.concat(params).join(" ");
-
-									const output = [];
-
-									const listener = (data) => {
-										output.push(data.line);
-									};
-
-									const endListener = () => {
-										client.removeEventListener("line", listener);
-										client.removeEventListener("command_end", endListener);
-
-										resolve(output.join("\n"));
-									};
-
-									client.on("line", listener);
-
-									client.on("command_end", endListener);
-
-									client.emit("command", {
-										command
-									});
-								});
-							};
+							return command(client, args);
 						}
 
 						const newArgs = args || [];
