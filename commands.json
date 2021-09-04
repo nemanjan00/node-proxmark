@@ -1,0 +1,3125 @@
+{
+    "prefs": {
+        "description": "{ Edit client/device preferences... }",
+        "name": "prefs",
+        "children": {
+            "get": {
+                "description": "{ Get a preference }",
+                "name": "get",
+                "children": {
+                    "barmode": {
+                        "description": "Get bar mode preference",
+                        "name": "barmode"
+                    },
+                    "clientdebug": {
+                        "description": "Get client debug level preference",
+                        "name": "clientdebug"
+                    },
+                    "clientdelay": {
+                        "description": "Get client execution delay preference",
+                        "name": "clientdelay"
+                    },
+                    "color": {
+                        "description": "Get color support preference",
+                        "name": "color"
+                    },
+                    "savepaths": {
+                        "description": "Get file folder",
+                        "name": "savepaths"
+                    },
+                    "emoji": {
+                        "description": "Get emoji display preference",
+                        "name": "emoji"
+                    },
+                    "hints": {
+                        "description": "Get hint display preference",
+                        "name": "hints"
+                    },
+                    "plotsliders": {
+                        "description": "Get plot slider display preference",
+                        "name": "plotsliders"
+                    }
+                }
+            },
+            "set": {
+                "description": "{ Set a preference }",
+                "name": "set",
+                "children": {
+                    "barmode": {
+                        "description": "Set bar mode",
+                        "name": "barmode"
+                    },
+                    "clientdebug": {
+                        "description": "Set client debug level",
+                        "name": "clientdebug"
+                    },
+                    "clientdelay": {
+                        "description": "Set client execution delay",
+                        "name": "clientdelay"
+                    },
+                    "color": {
+                        "description": "Set color support",
+                        "name": "color"
+                    },
+                    "emoji": {
+                        "description": "Set emoji display",
+                        "name": "emoji"
+                    },
+                    "hints": {
+                        "description": "Set hint display",
+                        "name": "hints"
+                    },
+                    "savepaths": {
+                        "description": "... to be adjusted next ...",
+                        "name": "savepaths"
+                    },
+                    "plotsliders": {
+                        "description": "Set plot slider display",
+                        "name": "plotsliders"
+                    }
+                }
+            },
+            "show": {
+                "description": "Show all preferences",
+                "name": "show"
+            }
+        }
+    },
+    "analyse": {
+        "description": "{ Analyse utils... }",
+        "category": "Technology",
+        "name": "analyse",
+        "children": {
+            "lcr": {
+                "description": "Generate final byte for XOR LRC",
+                "name": "lcr"
+            },
+            "crc": {
+                "description": "Stub method for CRC evaluations",
+                "name": "crc"
+            },
+            "chksum": {
+                "description": "Checksum with adding, masking and one's complement",
+                "name": "chksum"
+            },
+            "dates": {
+                "description": "Look for datestamps in a given array of bytes",
+                "name": "dates"
+            },
+            "tea": {
+                "description": "Crypto TEA test",
+                "name": "tea"
+            },
+            "lfsr": {
+                "description": "LFSR tests",
+                "name": "lfsr"
+            },
+            "a": {
+                "description": "num bits test",
+                "name": "a"
+            },
+            "nuid": {
+                "description": "create NUID from 7byte UID",
+                "name": "nuid"
+            },
+            "demodbuff": {
+                "description": "Load binary string to demodbuffer",
+                "name": "demodbuff"
+            },
+            "freq": {
+                "description": "Calc wave lengths",
+                "name": "freq"
+            },
+            "foo": {
+                "description": "muxer",
+                "name": "foo"
+            },
+            "units": {
+                "description": "convert ETU <> US <> SSP_CLK (3.39MHz)",
+                "name": "units"
+            }
+        }
+    },
+    "data": {
+        "description": "{ Plot window / data buffer manipulation... }",
+        "category": "Technology",
+        "name": "data",
+        "children": {
+            "biphaserawdecode": {
+                "description": "Biphase decode bin stream in DemodBuffer",
+                "category": "Modulation",
+                "name": "biphaserawdecode"
+            },
+            "detectclock": {
+                "description": "Detect ASK, FSK, NRZ, PSK clock rate of wave in GraphBuffer",
+                "category": "Modulation",
+                "name": "detectclock"
+            },
+            "fsktonrz": {
+                "description": "Convert fsk2 to nrz wave for alternate fsk demodulating (for weak fsk)",
+                "category": "Modulation",
+                "name": "fsktonrz"
+            },
+            "manrawdecode": {
+                "description": "Manchester decode binary stream in DemodBuffer",
+                "category": "Modulation",
+                "name": "manrawdecode"
+            },
+            "modulation": {
+                "description": "Identify LF signal for clock and modulation",
+                "category": "Modulation",
+                "name": "modulation"
+            },
+            "rawdemod": {
+                "description": "Demodulate the data in the GraphBuffer and output binary",
+                "category": "Modulation",
+                "name": "rawdemod"
+            },
+            "askedgedetect": {
+                "description": "Adjust Graph for manual ASK demod using the length of sample differences to detect the edge of a wave",
+                "category": "Graph",
+                "name": "askedgedetect"
+            },
+            "autocorr": {
+                "description": "Autocorrelation over window",
+                "category": "Graph",
+                "name": "autocorr"
+            },
+            "dirthreshold": {
+                "description": "Max rising higher up-thres/ Min falling lower down-thres, keep rest as prev.",
+                "category": "Graph",
+                "name": "dirthreshold"
+            },
+            "decimate": {
+                "description": "Decimate samples",
+                "category": "Graph",
+                "name": "decimate"
+            },
+            "undecimate": {
+                "description": "Un-decimate samples",
+                "category": "Graph",
+                "name": "undecimate"
+            },
+            "hide": {
+                "description": "Hide graph window",
+                "category": "Graph",
+                "name": "hide"
+            },
+            "hpf": {
+                "description": "Remove DC offset from trace",
+                "category": "Graph",
+                "name": "hpf"
+            },
+            "iir": {
+                "description": "Apply IIR buttersworth filter on plot data",
+                "category": "Graph",
+                "name": "iir"
+            },
+            "grid": {
+                "description": "overlay grid on graph window",
+                "category": "Graph",
+                "name": "grid"
+            },
+            "ltrim": {
+                "description": "Trim samples from left of trace",
+                "category": "Graph",
+                "name": "ltrim"
+            },
+            "mtrim": {
+                "description": "Trim out samples from the specified start to the specified stop",
+                "category": "Graph",
+                "name": "mtrim"
+            },
+            "norm": {
+                "description": "Normalize max/min to +/-128",
+                "category": "Graph",
+                "name": "norm"
+            },
+            "plot": {
+                "description": "Show graph window",
+                "category": "Graph",
+                "name": "plot"
+            },
+            "rtrim": {
+                "description": "Trim samples from right of trace",
+                "category": "Graph",
+                "name": "rtrim"
+            },
+            "setgraphmarkers": {
+                "description": "Set blue and orange marker in graph window",
+                "category": "Graph",
+                "name": "setgraphmarkers"
+            },
+            "shiftgraphzero": {
+                "description": "Shift 0 for Graphed wave + or - shift value",
+                "category": "Graph",
+                "name": "shiftgraphzero"
+            },
+            "timescale": {
+                "description": "Set a timescale to get a differential reading between the yellow and purple markers as time duration",
+                "category": "Graph",
+                "name": "timescale"
+            },
+            "zerocrossings": {
+                "description": "Count time between zero-crossings",
+                "category": "Graph",
+                "name": "zerocrossings"
+            },
+            "convertbitstream": {
+                "description": "Convert GraphBuffer's 0/1 values to 127 / -127",
+                "category": "Graph",
+                "name": "convertbitstream"
+            },
+            "getbitstream": {
+                "description": "Convert GraphBuffer's >=1 values to 1 and <1 to 0",
+                "category": "Graph",
+                "name": "getbitstream"
+            },
+            "asn1": {
+                "description": "asn1 decoder",
+                "category": "General",
+                "name": "asn1"
+            },
+            "bin2hex": {
+                "description": "Converts binary to hexadecimal",
+                "category": "General",
+                "name": "bin2hex"
+            },
+            "bitsamples": {
+                "description": "Get raw samples as bitstring",
+                "category": "General",
+                "name": "bitsamples"
+            },
+            "clear": {
+                "description": "Clears bigbuf on deviceside and graph window",
+                "category": "General",
+                "name": "clear"
+            },
+            "hexsamples": {
+                "description": "Dump big buffer as hex bytes",
+                "category": "General",
+                "name": "hexsamples"
+            },
+            "hex2bin": {
+                "description": "Converts hexadecimal to binary",
+                "category": "General",
+                "name": "hex2bin"
+            },
+            "load": {
+                "description": "Load contents of file into graph window",
+                "category": "General",
+                "name": "load"
+            },
+            "print": {
+                "description": "Print the data in the DemodBuffer",
+                "category": "General",
+                "name": "print"
+            },
+            "samples": {
+                "description": "Get raw samples for graph window (GraphBuffer)",
+                "category": "General",
+                "name": "samples"
+            },
+            "save": {
+                "description": "Save signal trace data (from graph window)",
+                "category": "General",
+                "name": "save"
+            },
+            "setdebugmode": {
+                "description": "Set Debugging Level on client side",
+                "category": "General",
+                "name": "setdebugmode"
+            },
+            "tune": {
+                "description": "Measure tuning of device antenna. Results shown in graph window",
+                "category": "General",
+                "name": "tune"
+            }
+        }
+    },
+    "emv": {
+        "description": "{ EMV ISO-14443 / ISO-7816... }",
+        "category": "Technology",
+        "name": "emv",
+        "children": {
+            "exec": {
+                "description": "Executes EMV contactless transaction.",
+                "name": "exec"
+            },
+            "pse": {
+                "description": "Execute PPSE. It selects 2PAY.SYS.DDF01 or 1PAY.SYS.DDF01 directory.",
+                "name": "pse"
+            },
+            "search": {
+                "description": "Try to select all applets from applets list and print installed applets.",
+                "name": "search"
+            },
+            "select": {
+                "description": "Select applet.",
+                "name": "select"
+            },
+            "gpo": {
+                "description": "Execute GetProcessingOptions.",
+                "name": "gpo"
+            },
+            "readrec": {
+                "description": "Read files from card.",
+                "name": "readrec"
+            },
+            "genac": {
+                "description": "Generate ApplicationCryptogram.",
+                "name": "genac"
+            },
+            "challenge": {
+                "description": "Generate challenge.",
+                "name": "challenge"
+            },
+            "intauth": {
+                "description": "Internal authentication.",
+                "name": "intauth"
+            },
+            "scan": {
+                "description": "Scan EMV card and save it contents to json file for emulator.",
+                "name": "scan"
+            },
+            "test": {
+                "description": "Crypto logic test.",
+                "name": "test"
+            },
+            "list": {
+                "description": "List ISO7816 history",
+                "name": "list"
+            },
+            "roca": {
+                "description": "Extract public keys and run ROCA test",
+                "name": "roca"
+            }
+        }
+    },
+    "hf": {
+        "description": "{ High frequency commands... }",
+        "category": "Technology",
+        "name": "hf",
+        "children": {
+            "15": {
+                "description": "{ ISO15693 RFIDs... }",
+                "category": "High Frequency",
+                "name": "15",
+                "children": {
+                    "list": {
+                        "description": "List ISO-15693 history",
+                        "category": "General",
+                        "name": "list"
+                    },
+                    "demod": {
+                        "description": "Demodulate ISO-15693 from tag",
+                        "category": "General",
+                        "name": "demod"
+                    },
+                    "dump": {
+                        "description": "Read all memory pages of an ISO-15693 tag, save to file",
+                        "category": "General",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "category": "General",
+                        "name": "info"
+                    },
+                    "sniff": {
+                        "description": "Sniff ISO-15693 traffic",
+                        "category": "General",
+                        "name": "sniff"
+                    },
+                    "raw": {
+                        "description": "Send raw hex data to tag",
+                        "category": "General",
+                        "name": "raw"
+                    },
+                    "rdbl": {
+                        "description": "Read a block",
+                        "category": "General",
+                        "name": "rdbl"
+                    },
+                    "rdmulti": {
+                        "description": "Reads multiple blocks",
+                        "category": "General",
+                        "name": "rdmulti"
+                    },
+                    "reader": {
+                        "description": "Act like an ISO-15693 reader",
+                        "category": "General",
+                        "name": "reader"
+                    },
+                    "restore": {
+                        "description": "Restore from file to all memory pages of an ISO-15693 tag",
+                        "category": "General",
+                        "name": "restore"
+                    },
+                    "samples": {
+                        "description": "Acquire samples as reader (enables carrier, sends inquiry)",
+                        "category": "General",
+                        "name": "samples"
+                    },
+                    "sim": {
+                        "description": "Fake an ISO-15693 tag",
+                        "category": "General",
+                        "name": "sim"
+                    },
+                    "slixdisable": {
+                        "description": "Disable privacy mode on SLIX ISO-15693 tag",
+                        "category": "General",
+                        "name": "slixdisable"
+                    },
+                    "wrbl": {
+                        "description": "Write a block",
+                        "category": "General",
+                        "name": "wrbl"
+                    },
+                    "findafi": {
+                        "description": "Brute force AFI of an ISO-15693 tag",
+                        "category": "afi",
+                        "name": "findafi"
+                    },
+                    "writeafi": {
+                        "description": "Writes the AFI on an ISO-15693 tag",
+                        "category": "afi",
+                        "name": "writeafi"
+                    },
+                    "writedsfid": {
+                        "description": "Writes the DSFID on an ISO-15693 tag",
+                        "category": "afi",
+                        "name": "writedsfid"
+                    },
+                    "csetuid": {
+                        "description": "Set UID for magic card",
+                        "category": "magic",
+                        "name": "csetuid"
+                    }
+                }
+            },
+            "14a": {
+                "description": "{ ISO14443A RFIDs... }",
+                "category": "High Frequency",
+                "name": "14a",
+                "children": {
+                    "list": {
+                        "description": "List ISO 14443-a history",
+                        "name": "list"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "reader": {
+                        "description": "Act like an ISO14443-a reader",
+                        "name": "reader"
+                    },
+                    "ndefread": {
+                        "description": "Read an NDEF file from ISO 14443-A Type 4 tag",
+                        "name": "ndefread"
+                    },
+                    "cuids": {
+                        "description": "Collect n>0 ISO14443-a UIDs in one go",
+                        "name": "cuids"
+                    },
+                    "sim": {
+                        "description": "Simulate ISO 14443-a tag",
+                        "name": "sim"
+                    },
+                    "sniff": {
+                        "description": "sniff ISO 14443-a traffic",
+                        "name": "sniff"
+                    },
+                    "apdu": {
+                        "description": "Send ISO 14443-4 APDU to tag",
+                        "name": "apdu"
+                    },
+                    "chaining": {
+                        "description": "Control ISO 14443-4 input chaining",
+                        "name": "chaining"
+                    },
+                    "raw": {
+                        "description": "Send raw hex data to tag",
+                        "name": "raw"
+                    },
+                    "antifuzz": {
+                        "description": "Fuzzing the anticollision phase. Warning! Readers may react strange",
+                        "name": "antifuzz"
+                    },
+                    "config": {
+                        "description": "Configure 14a settings (use with caution)",
+                        "name": "config"
+                    },
+                    "apdufind": {
+                        "description": "Enumerate APDUs - CLA/INS/P1P2",
+                        "name": "apdufind"
+                    }
+                }
+            },
+            "14b": {
+                "description": "{ ISO14443B RFIDs... }",
+                "category": "High Frequency",
+                "name": "14b",
+                "children": {
+                    "apdu": {
+                        "description": "Send ISO 14443-4 APDU to tag",
+                        "name": "apdu"
+                    },
+                    "dump": {
+                        "description": "Read all memory pages of an ISO-14443-B tag, save to file",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List ISO-14443-B history",
+                        "name": "list"
+                    },
+                    "ndefread": {
+                        "description": "Read NDEF file on tag",
+                        "name": "ndefread"
+                    },
+                    "raw": {
+                        "description": "Send raw hex data to tag",
+                        "name": "raw"
+                    },
+                    "reader": {
+                        "description": "Act as a ISO-14443-B reader to identify a tag",
+                        "name": "reader"
+                    },
+                    "sim": {
+                        "description": "Fake ISO ISO-14443-B tag",
+                        "name": "sim"
+                    },
+                    "sniff": {
+                        "description": "Eavesdrop ISO-14443-B",
+                        "name": "sniff"
+                    },
+                    "rdbl": {
+                        "description": "Read SRI512/SRIX4x block",
+                        "name": "rdbl"
+                    },
+                    "sriwrite": {
+                        "description": "Write data to a SRI512 or SRIX4K tag",
+                        "name": "sriwrite"
+                    }
+                }
+            },
+            "cipurse": {
+                "description": "{ Cipurse transport Cards... }",
+                "category": "High Frequency",
+                "name": "cipurse",
+                "children": {
+                    "info": {
+                        "description": "Get info about CIPURSE tag",
+                        "name": "info"
+                    },
+                    "auth": {
+                        "description": "Authenticate CIPURSE tag",
+                        "name": "auth"
+                    },
+                    "read": {
+                        "description": "Read binary file",
+                        "name": "read"
+                    },
+                    "write": {
+                        "description": "Write binary file",
+                        "name": "write"
+                    },
+                    "aread": {
+                        "description": "Read file attributes",
+                        "name": "aread"
+                    },
+                    "delete": {
+                        "description": "Delete file",
+                        "name": "delete"
+                    },
+                    "default": {
+                        "description": "Set default key and file id for all the other commands",
+                        "name": "default"
+                    },
+                    "test": {
+                        "description": "Tests",
+                        "name": "test"
+                    }
+                }
+            },
+            "epa": {
+                "description": "{ German Identification Card... }",
+                "category": "High Frequency",
+                "name": "epa",
+                "children": {
+                    "cnonces": {
+                        "description": "Acquire encrypted PACE nonces of specific size",
+                        "name": "cnonces"
+                    },
+                    "preplay": {
+                        "description": "Perform PACE protocol by replaying given APDUs",
+                        "name": "preplay"
+                    }
+                }
+            },
+            "emrtd": {
+                "description": "{ Machine Readable Travel Document... }",
+                "category": "High Frequency",
+                "name": "emrtd",
+                "children": {
+                    "dump": {
+                        "description": "Dump eMRTD files to binary files",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Display info about an eMRTD",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List ISO 14443A/7816 history",
+                        "name": "list"
+                    }
+                }
+            },
+            "felica": {
+                "description": "{ ISO18092 / FeliCa RFIDs... }",
+                "category": "High Frequency",
+                "name": "felica",
+                "children": {
+                    "list": {
+                        "description": "List ISO 18092/FeliCa history",
+                        "category": "General",
+                        "name": "list"
+                    },
+                    "reader": {
+                        "description": "Act like an ISO18092/FeliCa reader",
+                        "category": "General",
+                        "name": "reader"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "category": "General",
+                        "name": "info"
+                    },
+                    "sniff": {
+                        "description": "Sniff ISO 18092/FeliCa traffic",
+                        "category": "General",
+                        "name": "sniff"
+                    },
+                    "raw": {
+                        "description": "Send raw hex data to tag",
+                        "category": "General",
+                        "name": "raw"
+                    },
+                    "rdbl": {
+                        "description": "read block data from authentication-not-required Service.",
+                        "category": "General",
+                        "name": "rdbl"
+                    },
+                    "wrbl": {
+                        "description": "write block data to an authentication-not-required Service.",
+                        "category": "General",
+                        "name": "wrbl"
+                    },
+                    "rqservice": {
+                        "description": "verify the existence of Area and Service, and to acquire Key Version.",
+                        "category": "FeliCa Standard",
+                        "name": "rqservice"
+                    },
+                    "rqresponse": {
+                        "description": "verify the existence of a card and its Mode.",
+                        "category": "FeliCa Standard",
+                        "name": "rqresponse"
+                    },
+                    "scsvcode": {
+                        "description": "acquire Area Code and Service Code.",
+                        "category": "FeliCa Standard",
+                        "name": "scsvcode"
+                    },
+                    "rqsyscode": {
+                        "description": "acquire System Code registered to the card.",
+                        "category": "FeliCa Standard",
+                        "name": "rqsyscode"
+                    },
+                    "auth1": {
+                        "description": "authenticate a card. Start mutual authentication with Auth1",
+                        "category": "FeliCa Standard",
+                        "name": "auth1"
+                    },
+                    "auth2": {
+                        "description": "allow a card to authenticate a Reader/Writer. Complete mutual authentication",
+                        "category": "FeliCa Standard",
+                        "name": "auth2"
+                    },
+                    "rqspecver": {
+                        "description": "acquire the version of card OS.",
+                        "category": "FeliCa Standard",
+                        "name": "rqspecver"
+                    },
+                    "resetmode": {
+                        "description": "reset Mode to Mode 0.",
+                        "category": "FeliCa Standard",
+                        "name": "resetmode"
+                    },
+                    "litesim": {
+                        "description": "Emulating ISO/18092 FeliCa Lite tag",
+                        "category": "FeliCa Light",
+                        "name": "litesim"
+                    },
+                    "litedump": {
+                        "description": "Wait for and try dumping FelicaLite",
+                        "category": "FeliCa Light",
+                        "name": "litedump"
+                    }
+                }
+            },
+            "fido": {
+                "description": "{ FIDO and FIDO2 authenticators... }",
+                "category": "High Frequency",
+                "name": "fido",
+                "children": {
+                    "list": {
+                        "description": "List ISO 14443A history",
+                        "name": "list"
+                    },
+                    "info": {
+                        "description": "Info about FIDO tag.",
+                        "name": "info"
+                    },
+                    "reg": {
+                        "description": "FIDO U2F Registration Message.",
+                        "name": "reg"
+                    },
+                    "auth": {
+                        "description": "FIDO U2F Authentication Message.",
+                        "name": "auth"
+                    },
+                    "make": {
+                        "description": "FIDO2 MakeCredential command.",
+                        "name": "make"
+                    },
+                    "assert": {
+                        "description": "FIDO2 GetAssertion command.",
+                        "name": "assert"
+                    }
+                }
+            },
+            "jooki": {
+                "description": "{ Jooki RFIDs... }",
+                "category": "High Frequency",
+                "name": "jooki",
+                "children": {
+                    "clone": {
+                        "description": "Write a Jooki token",
+                        "name": "clone"
+                    },
+                    "decode": {
+                        "description": "Decode Jooki token",
+                        "name": "decode"
+                    },
+                    "encode": {
+                        "description": "Encode Jooki token",
+                        "name": "encode"
+                    },
+                    "sim": {
+                        "description": "Simulate Jooki token",
+                        "name": "sim"
+                    }
+                }
+            },
+            "iclass": {
+                "description": "{ ICLASS RFIDs... }",
+                "category": "High Frequency",
+                "name": "iclass",
+                "children": {
+                    "dump": {
+                        "description": "Dump Picopass / iCLASS tag to file",
+                        "category": "operations",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "category": "operations",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List iclass history",
+                        "category": "operations",
+                        "name": "list"
+                    },
+                    "rdbl": {
+                        "description": "Read Picopass / iCLASS block",
+                        "category": "operations",
+                        "name": "rdbl"
+                    },
+                    "reader": {
+                        "description": "Act like an Picopass / iCLASS reader",
+                        "category": "operations",
+                        "name": "reader"
+                    },
+                    "restore": {
+                        "description": "Restore a dump file onto a Picopass / iCLASS tag",
+                        "category": "operations",
+                        "name": "restore"
+                    },
+                    "sniff": {
+                        "description": "Eavesdrop Picopass / iCLASS communication",
+                        "category": "operations",
+                        "name": "sniff"
+                    },
+                    "wrbl": {
+                        "description": "Write Picopass / iCLASS block",
+                        "category": "operations",
+                        "name": "wrbl"
+                    },
+                    "chk": {
+                        "description": "Check keys",
+                        "category": "recovery",
+                        "name": "chk"
+                    },
+                    "loclass": {
+                        "description": "Use loclass to perform bruteforce reader attack",
+                        "category": "recovery",
+                        "name": "loclass"
+                    },
+                    "lookup": {
+                        "description": "Uses authentication trace to check for key in dictionary file",
+                        "category": "recovery",
+                        "name": "lookup"
+                    },
+                    "sim": {
+                        "description": "Simulate iCLASS tag",
+                        "category": "simulation",
+                        "name": "sim"
+                    },
+                    "eload": {
+                        "description": "Load Picopass / iCLASS dump file into emulator memory",
+                        "category": "simulation",
+                        "name": "eload"
+                    },
+                    "esave": {
+                        "description": "Save emulator memory to file",
+                        "category": "simulation",
+                        "name": "esave"
+                    },
+                    "eview": {
+                        "description": "View emulator memory",
+                        "category": "simulation",
+                        "name": "eview"
+                    },
+                    "configcard": {
+                        "description": "Reader configuration card",
+                        "category": "utils",
+                        "name": "configcard"
+                    },
+                    "calcnewkey": {
+                        "description": "Calc diversified keys (blocks 3 & 4) to write new keys",
+                        "category": "utils",
+                        "name": "calcnewkey"
+                    },
+                    "encode": {
+                        "description": "Encode binary wiegand to block 7",
+                        "category": "utils",
+                        "name": "encode"
+                    },
+                    "encrypt": {
+                        "description": "Encrypt given block data",
+                        "category": "utils",
+                        "name": "encrypt"
+                    },
+                    "decrypt": {
+                        "description": "Decrypt given block data or tag dump file",
+                        "category": "utils",
+                        "name": "decrypt"
+                    },
+                    "managekeys": {
+                        "description": "Manage keys to use with iclass commands",
+                        "category": "utils",
+                        "name": "managekeys"
+                    },
+                    "permutekey": {
+                        "description": "Permute function from 'heart of darkness' paper",
+                        "category": "utils",
+                        "name": "permutekey"
+                    },
+                    "view": {
+                        "description": "Display content from tag dump file",
+                        "category": "utils",
+                        "name": "view"
+                    }
+                }
+            },
+            "legic": {
+                "description": "{ LEGIC RFIDs... }",
+                "category": "High Frequency",
+                "name": "legic",
+                "children": {
+                    "list": {
+                        "description": "List LEGIC history",
+                        "name": "list"
+                    },
+                    "reader": {
+                        "description": "LEGIC Prime Reader UID and tag info",
+                        "name": "reader"
+                    },
+                    "info": {
+                        "description": "Display deobfuscated and decoded LEGIC Prime tag data",
+                        "name": "info"
+                    },
+                    "dump": {
+                        "description": "Dump LEGIC Prime tag to binary file",
+                        "name": "dump"
+                    },
+                    "restore": {
+                        "description": "Restore a dump file onto a LEGIC Prime tag",
+                        "name": "restore"
+                    },
+                    "rdbl": {
+                        "description": "Read bytes from a LEGIC Prime tag",
+                        "name": "rdbl"
+                    },
+                    "sim": {
+                        "description": "Start tag simulator",
+                        "name": "sim"
+                    },
+                    "wrbl": {
+                        "description": "Write data to a LEGIC Prime tag",
+                        "name": "wrbl"
+                    },
+                    "crc": {
+                        "description": "Calculate Legic CRC over given bytes",
+                        "name": "crc"
+                    },
+                    "eload": {
+                        "description": "Load binary dump to emulator memory",
+                        "name": "eload"
+                    },
+                    "esave": {
+                        "description": "Save emulator memory to binary file",
+                        "name": "esave"
+                    },
+                    "wipe": {
+                        "description": "Wipe a LEGIC Prime tag",
+                        "name": "wipe"
+                    }
+                }
+            },
+            "lto": {
+                "description": "{ LTO Cartridge Memory RFIDs... }",
+                "category": "High Frequency",
+                "name": "lto",
+                "children": {
+                    "dump": {
+                        "description": "Dump LTO-CM tag to file",
+                        "name": "dump"
+                    },
+                    "restore": {
+                        "description": "Restore dump file to LTO-CM tag",
+                        "name": "restore"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "rdbl": {
+                        "description": "Read block",
+                        "name": "rdbl"
+                    },
+                    "wrbl": {
+                        "description": "Write block",
+                        "name": "wrbl"
+                    },
+                    "list": {
+                        "description": "List LTO-CM history",
+                        "name": "list"
+                    }
+                }
+            },
+            "mf": {
+                "description": "{ MIFARE RFIDs... }",
+                "category": "High Frequency",
+                "name": "mf",
+                "children": {
+                    "list": {
+                        "description": "List MIFARE history",
+                        "name": "list"
+                    },
+                    "darkside": {
+                        "description": "Darkside attack",
+                        "category": "recovery",
+                        "name": "darkside"
+                    },
+                    "nested": {
+                        "description": "Nested attack",
+                        "category": "recovery",
+                        "name": "nested"
+                    },
+                    "hardnested": {
+                        "description": "Nested attack for hardened MIFARE Classic cards",
+                        "category": "recovery",
+                        "name": "hardnested"
+                    },
+                    "staticnested": {
+                        "description": "Nested attack against static nonce MIFARE Classic cards",
+                        "category": "recovery",
+                        "name": "staticnested"
+                    },
+                    "autopwn": {
+                        "description": "Automatic key recovery tool for MIFARE Classic",
+                        "category": "recovery",
+                        "name": "autopwn"
+                    },
+                    "nack": {
+                        "description": "Test for MIFARE NACK bug",
+                        "category": "recovery",
+                        "name": "nack"
+                    },
+                    "chk": {
+                        "description": "Check keys",
+                        "category": "recovery",
+                        "name": "chk"
+                    },
+                    "fchk": {
+                        "description": "Check keys fast, targets all keys on card",
+                        "category": "recovery",
+                        "name": "fchk"
+                    },
+                    "decrypt": {
+                        "description": "[nt] [ar_enc] [at_enc] [data] - to decrypt sniff or trace",
+                        "category": "recovery",
+                        "name": "decrypt"
+                    },
+                    "supercard": {
+                        "description": "Extract info from a `super card`",
+                        "category": "recovery",
+                        "name": "supercard"
+                    },
+                    "auth4": {
+                        "description": "ISO14443-4 AES authentication",
+                        "category": "operations",
+                        "name": "auth4"
+                    },
+                    "dump": {
+                        "description": "Dump MIFARE Classic tag to binary file",
+                        "category": "operations",
+                        "name": "dump"
+                    },
+                    "mad": {
+                        "description": "Checks and prints MAD",
+                        "category": "operations",
+                        "name": "mad"
+                    },
+                    "ndefread": {
+                        "description": "Prints NDEF records from card",
+                        "category": "operations",
+                        "name": "ndefread"
+                    },
+                    "personalize": {
+                        "description": "Personalize UID (MIFARE Classic EV1 only)",
+                        "category": "operations",
+                        "name": "personalize"
+                    },
+                    "rdbl": {
+                        "description": "Read MIFARE Classic block",
+                        "category": "operations",
+                        "name": "rdbl"
+                    },
+                    "rdsc": {
+                        "description": "Read MIFARE Classic sector",
+                        "category": "operations",
+                        "name": "rdsc"
+                    },
+                    "restore": {
+                        "description": "Restore MIFARE Classic binary file to BLANK tag",
+                        "category": "operations",
+                        "name": "restore"
+                    },
+                    "setmod": {
+                        "description": "Set MIFARE Classic EV1 load modulation strength",
+                        "category": "operations",
+                        "name": "setmod"
+                    },
+                    "view": {
+                        "description": "Display content from tag dump file",
+                        "category": "operations",
+                        "name": "view"
+                    },
+                    "wipe": {
+                        "description": "Wipe card to zeros and default keys/acc",
+                        "category": "operations",
+                        "name": "wipe"
+                    },
+                    "wrbl": {
+                        "description": "Write MIFARE Classic block",
+                        "category": "operations",
+                        "name": "wrbl"
+                    },
+                    "sim": {
+                        "description": "Simulate MIFARE card",
+                        "category": "simulation",
+                        "name": "sim"
+                    },
+                    "ecfill": {
+                        "description": "Fill emulator memory with help of keys from emulator",
+                        "category": "simulation",
+                        "name": "ecfill"
+                    },
+                    "eclr": {
+                        "description": "Clear emulator memory",
+                        "category": "simulation",
+                        "name": "eclr"
+                    },
+                    "egetblk": {
+                        "description": "Get emulator memory block",
+                        "category": "simulation",
+                        "name": "egetblk"
+                    },
+                    "egetsc": {
+                        "description": "Get emulator memory sector",
+                        "category": "simulation",
+                        "name": "egetsc"
+                    },
+                    "ekeyprn": {
+                        "description": "Print keys from emulator memory",
+                        "category": "simulation",
+                        "name": "ekeyprn"
+                    },
+                    "eload": {
+                        "description": "Load from file emul dump",
+                        "category": "simulation",
+                        "name": "eload"
+                    },
+                    "esave": {
+                        "description": "Save to file emul dump",
+                        "category": "simulation",
+                        "name": "esave"
+                    },
+                    "esetblk": {
+                        "description": "Set emulator memory block",
+                        "category": "simulation",
+                        "name": "esetblk"
+                    },
+                    "eview": {
+                        "description": "View emulator memory",
+                        "category": "simulation",
+                        "name": "eview"
+                    },
+                    "cgetblk": {
+                        "description": "Read block from card",
+                        "category": "magic gen1",
+                        "name": "cgetblk"
+                    },
+                    "cgetsc": {
+                        "description": "Read sector from card",
+                        "category": "magic gen1",
+                        "name": "cgetsc"
+                    },
+                    "cload": {
+                        "description": "Load dump to card",
+                        "category": "magic gen1",
+                        "name": "cload"
+                    },
+                    "csave": {
+                        "description": "Save dump from card into file or emulator",
+                        "category": "magic gen1",
+                        "name": "csave"
+                    },
+                    "csetblk": {
+                        "description": "Write block to card",
+                        "category": "magic gen1",
+                        "name": "csetblk"
+                    },
+                    "csetuid": {
+                        "description": "Set UID on card",
+                        "category": "magic gen1",
+                        "name": "csetuid"
+                    },
+                    "cview": {
+                        "description": "View card",
+                        "category": "magic gen1",
+                        "name": "cview"
+                    },
+                    "cwipe": {
+                        "description": "Wipe card to default UID/Sectors/Keys",
+                        "category": "magic gen1",
+                        "name": "cwipe"
+                    },
+                    "gen3uid": {
+                        "description": "Set UID without changing manufacturer block",
+                        "category": "magic gen3",
+                        "name": "gen3uid"
+                    },
+                    "gen3blk": {
+                        "description": "Overwrite manufacturer block",
+                        "category": "magic gen3",
+                        "name": "gen3blk"
+                    },
+                    "gen3freeze": {
+                        "description": "Perma lock UID changes. irreversible",
+                        "category": "magic gen3",
+                        "name": "gen3freeze"
+                    },
+                    "gview": {
+                        "description": "View card",
+                        "category": "magic gen3 GTU",
+                        "name": "gview"
+                    }
+                }
+            },
+            "mfp": {
+                "description": "{ MIFARE Plus RFIDs... }",
+                "category": "High Frequency",
+                "name": "mfp",
+                "children": {
+                    "info": {
+                        "description": "Info about Mifare Plus tag",
+                        "name": "info"
+                    },
+                    "wrp": {
+                        "description": "Write Perso command",
+                        "name": "wrp"
+                    },
+                    "initp": {
+                        "description": "Fills all the card's keys",
+                        "name": "initp"
+                    },
+                    "commitp": {
+                        "description": "Move card to SL1 or SL3 mode",
+                        "name": "commitp"
+                    },
+                    "auth": {
+                        "description": "Authentication",
+                        "name": "auth"
+                    },
+                    "rdbl": {
+                        "description": "Read blocks",
+                        "name": "rdbl"
+                    },
+                    "rdsc": {
+                        "description": "Read sectors",
+                        "name": "rdsc"
+                    },
+                    "wrbl": {
+                        "description": "Write blocks",
+                        "name": "wrbl"
+                    },
+                    "chk": {
+                        "description": "Check keys",
+                        "name": "chk"
+                    },
+                    "mad": {
+                        "description": "Checks and prints MAD",
+                        "name": "mad"
+                    },
+                    "ndefread": {
+                        "description": "Prints NDEF records from card",
+                        "name": "ndefread"
+                    }
+                }
+            },
+            "mfu": {
+                "description": "{ MIFARE Ultralight RFIDs... }",
+                "category": "High Frequency",
+                "name": "mfu",
+                "children": {
+                    "keygen": {
+                        "description": "Generate 3DES MIFARE diversified keys",
+                        "category": "recovery",
+                        "name": "keygen"
+                    },
+                    "pwdgen": {
+                        "description": "Generate pwd from known algos",
+                        "category": "recovery",
+                        "name": "pwdgen"
+                    },
+                    "otptear": {
+                        "description": "Tear-off test on OTP bits",
+                        "category": "recovery",
+                        "name": "otptear"
+                    },
+                    "cauth": {
+                        "description": "Authentication - Ultralight-C",
+                        "category": "operations",
+                        "name": "cauth"
+                    },
+                    "dump": {
+                        "description": "Dump MIFARE Ultralight family tag to binary file",
+                        "category": "operations",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "category": "operations",
+                        "name": "info"
+                    },
+                    "ndefread": {
+                        "description": "Prints NDEF records from card",
+                        "category": "operations",
+                        "name": "ndefread"
+                    },
+                    "rdbl": {
+                        "description": "Read block",
+                        "category": "operations",
+                        "name": "rdbl"
+                    },
+                    "restore": {
+                        "description": "Restore a dump onto a MFU MAGIC tag",
+                        "category": "operations",
+                        "name": "restore"
+                    },
+                    "wrbl": {
+                        "description": "Write block",
+                        "category": "operations",
+                        "name": "wrbl"
+                    },
+                    "eload": {
+                        "description": "load Ultralight .eml dump file into emulator memory",
+                        "category": "simulation",
+                        "name": "eload"
+                    },
+                    "eview": {
+                        "description": "View emulator memory",
+                        "category": "simulation",
+                        "name": "eview"
+                    },
+                    "sim": {
+                        "description": "Simulate MIFARE Ultralight from emulator memory",
+                        "category": "simulation",
+                        "name": "sim"
+                    },
+                    "setpwd": {
+                        "description": "Set 3DES key - Ultralight-C",
+                        "category": "magic",
+                        "name": "setpwd"
+                    },
+                    "setuid": {
+                        "description": "Set UID - MAGIC tags only",
+                        "category": "magic",
+                        "name": "setuid"
+                    }
+                }
+            },
+            "mfdes": {
+                "description": "{ MIFARE Desfire RFIDs... }",
+                "category": "High Frequency",
+                "name": "mfdes",
+                "children": {
+                    "default": {
+                        "description": "[new]Set defaults for all the commands",
+                        "category": "general",
+                        "name": "default"
+                    },
+                    "auth": {
+                        "description": "Tries a MIFARE DesFire Authentication",
+                        "category": "general",
+                        "name": "auth"
+                    },
+                    "chk": {
+                        "description": "Check keys",
+                        "category": "general",
+                        "name": "chk"
+                    },
+                    "enum": {
+                        "description": "Tries enumerate all applications",
+                        "category": "general",
+                        "name": "enum"
+                    },
+                    "formatpicc": {
+                        "description": "[new]Format PICC",
+                        "category": "general",
+                        "name": "formatpicc"
+                    },
+                    "freemem": {
+                        "description": "[new]Get free memory size",
+                        "category": "general",
+                        "name": "freemem"
+                    },
+                    "getuid": {
+                        "description": "[new]Get uid from card",
+                        "category": "general",
+                        "name": "getuid"
+                    },
+                    "setconfig": {
+                        "description": "[new]Set card configuration",
+                        "category": "general",
+                        "name": "setconfig"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "category": "general",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List DESFire (ISO 14443A) history",
+                        "category": "general",
+                        "name": "list"
+                    },
+                    "changekey": {
+                        "description": "[new]Change Key",
+                        "category": "Keys",
+                        "name": "changekey"
+                    },
+                    "chkeysettings": {
+                        "description": "[new]Change Key Settings",
+                        "category": "Keys",
+                        "name": "chkeysettings"
+                    },
+                    "getkeysettings": {
+                        "description": "[new]Get Key Settings",
+                        "category": "Keys",
+                        "name": "getkeysettings"
+                    },
+                    "getkeyversions": {
+                        "description": "[new]Get Key Versions",
+                        "category": "Keys",
+                        "name": "getkeyversions"
+                    },
+                    "bruteaid": {
+                        "description": "Recover AIDs by bruteforce",
+                        "category": "Applications",
+                        "name": "bruteaid"
+                    },
+                    "createapp": {
+                        "description": "[new]Create Application",
+                        "category": "Applications",
+                        "name": "createapp"
+                    },
+                    "deleteapp": {
+                        "description": "[new]Delete Application",
+                        "category": "Applications",
+                        "name": "deleteapp"
+                    },
+                    "selectaid": {
+                        "description": "Select Application ID",
+                        "category": "Applications",
+                        "name": "selectaid"
+                    },
+                    "getaids": {
+                        "description": "[new]Get Application IDs list",
+                        "category": "Applications",
+                        "name": "getaids"
+                    },
+                    "getappnames": {
+                        "description": "[new]Get Applications list",
+                        "category": "Applications",
+                        "name": "getappnames"
+                    },
+                    "getfileids": {
+                        "description": "[new]Get File IDs list",
+                        "category": "Files",
+                        "name": "getfileids"
+                    },
+                    "getfileisoids": {
+                        "description": "[new]Get File ISO IDs list",
+                        "category": "Files",
+                        "name": "getfileisoids"
+                    },
+                    "createfile": {
+                        "description": "[new]Create Standard/Backup File",
+                        "category": "Files",
+                        "name": "createfile"
+                    },
+                    "createvaluefile": {
+                        "description": "[new]Create Value File",
+                        "category": "Files",
+                        "name": "createvaluefile"
+                    },
+                    "createrecordfile": {
+                        "description": "[new]Create Linear/Cyclic Record File",
+                        "category": "Files",
+                        "name": "createrecordfile"
+                    },
+                    "createmacfile": {
+                        "description": "[new]Create Transaction MAC File",
+                        "category": "Files",
+                        "name": "createmacfile"
+                    },
+                    "deletefile": {
+                        "description": "[new]Delete File",
+                        "category": "Files",
+                        "name": "deletefile"
+                    },
+                    "getfilesettings": {
+                        "description": "[new]Get file settings",
+                        "category": "Files",
+                        "name": "getfilesettings"
+                    },
+                    "chfilesettings": {
+                        "description": "[new]Change file settings",
+                        "category": "Files",
+                        "name": "chfilesettings"
+                    },
+                    "dump": {
+                        "description": "Dump all files",
+                        "category": "Files",
+                        "name": "dump"
+                    },
+                    "read": {
+                        "description": "[new]Read data from standard/backup/record/value/mac file",
+                        "category": "Files",
+                        "name": "read"
+                    },
+                    "write": {
+                        "description": "[new]Write data to standard/backup/record/value file",
+                        "category": "Files",
+                        "name": "write"
+                    },
+                    "value": {
+                        "description": "[new]Operations with value file (get/credit/limited credit/debit/clear)",
+                        "category": "Files",
+                        "name": "value"
+                    },
+                    "clearrecfile": {
+                        "description": "[new]Clear record File",
+                        "category": "Files",
+                        "name": "clearrecfile"
+                    },
+                    "test": {
+                        "description": "Test crypto",
+                        "category": "System",
+                        "name": "test"
+                    }
+                }
+            },
+            "seos": {
+                "description": "{ SEOS RFIDs... }",
+                "category": "High Frequency",
+                "name": "seos",
+                "children": {
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List SEOS history",
+                        "name": "list"
+                    }
+                }
+            },
+            "st25ta": {
+                "description": "{ ST25TA RFIDs... }",
+                "category": "High Frequency",
+                "name": "st25ta",
+                "children": {
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List ISO 14443A/7816 history",
+                        "name": "list"
+                    },
+                    "ndefread": {
+                        "description": "read NDEF file on tag",
+                        "name": "ndefread"
+                    },
+                    "protect": {
+                        "description": "change protection on tag",
+                        "name": "protect"
+                    },
+                    "pwd": {
+                        "description": "change password on tag",
+                        "name": "pwd"
+                    },
+                    "sim": {
+                        "description": "Fake ISO 14443A/ST tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "thinfilm": {
+                "description": "{ Thinfilm RFIDs... }",
+                "category": "High Frequency",
+                "name": "thinfilm",
+                "children": {
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "list": {
+                        "description": "List NFC Barcode / Thinfilm history - not correct",
+                        "name": "list"
+                    },
+                    "sim": {
+                        "description": "Fake Thinfilm tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "topaz": {
+                "description": "{ TOPAZ (NFC Type 1) RFIDs... }",
+                "category": "High Frequency",
+                "name": "topaz",
+                "children": {
+                    "list": {
+                        "description": "List Topaz history",
+                        "name": "list"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "reader": {
+                        "description": "Act like a Topaz reader",
+                        "name": "reader"
+                    },
+                    "sim": {
+                        "description": "<UID> -- Simulate Topaz tag",
+                        "name": "sim"
+                    },
+                    "sniff": {
+                        "description": "Sniff Topaz reader-tag communication",
+                        "name": "sniff"
+                    },
+                    "raw": {
+                        "description": "Send raw hex data to tag",
+                        "name": "raw"
+                    }
+                }
+            },
+            "waveshare": {
+                "description": "{ Waveshare NFC ePaper... }",
+                "category": "High Frequency",
+                "name": "waveshare",
+                "children": {
+                    "loadbmp": {
+                        "description": "Load BMP file to Waveshare NFC ePaper",
+                        "name": "loadbmp"
+                    }
+                }
+            },
+            "list": {
+                "description": "List protocol data in trace buffer",
+                "category": "General",
+                "name": "list"
+            },
+            "plot": {
+                "description": "Plot signal",
+                "category": "General",
+                "name": "plot"
+            },
+            "tune": {
+                "description": "Continuously measure HF antenna tuning",
+                "category": "General",
+                "name": "tune"
+            },
+            "search": {
+                "description": "Search for known HF tags",
+                "category": "General",
+                "name": "search"
+            },
+            "sniff": {
+                "description": "Generic HF Sniff",
+                "category": "General",
+                "name": "sniff"
+            }
+        }
+    },
+    "hw": {
+        "description": "{ Hardware commands... }",
+        "category": "Technology",
+        "name": "hw",
+        "children": {
+            "break": {
+                "description": "Send break loop usb command",
+                "category": "Hardware",
+                "name": "break"
+            },
+            "connect": {
+                "description": "Connect Proxmark3 to serial port",
+                "category": "Hardware",
+                "name": "connect"
+            },
+            "dbg": {
+                "description": "Set Proxmark3 debug level",
+                "category": "Hardware",
+                "name": "dbg"
+            },
+            "detectreader": {
+                "description": "Detect external reader field",
+                "category": "Hardware",
+                "name": "detectreader"
+            },
+            "fpgaoff": {
+                "description": "Set FPGA off",
+                "category": "Hardware",
+                "name": "fpgaoff"
+            },
+            "ping": {
+                "description": "Test if the Proxmark3 is responsive",
+                "category": "Hardware",
+                "name": "ping"
+            },
+            "readmem": {
+                "description": "Read memory at decimal address from flash",
+                "category": "Hardware",
+                "name": "readmem"
+            },
+            "reset": {
+                "description": "Reset the Proxmark3",
+                "category": "Hardware",
+                "name": "reset"
+            },
+            "setlfdivisor": {
+                "description": "Drive LF antenna at 12MHz / (divisor + 1)",
+                "category": "Hardware",
+                "name": "setlfdivisor"
+            },
+            "setmux": {
+                "description": "Set the ADC mux to a specific value",
+                "category": "Hardware",
+                "name": "setmux"
+            },
+            "standalone": {
+                "description": "Jump to the standalone mode",
+                "category": "Hardware",
+                "name": "standalone"
+            },
+            "status": {
+                "description": "Show runtime status information about the connected Proxmark3",
+                "category": "Hardware",
+                "name": "status"
+            },
+            "tearoff": {
+                "description": "Program a tearoff hook for the next command supporting tearoff",
+                "category": "Hardware",
+                "name": "tearoff"
+            },
+            "tia": {
+                "description": "Trigger a Timing Interval Acquisition to re-adjust the RealTimeCounter divider",
+                "category": "Hardware",
+                "name": "tia"
+            },
+            "tune": {
+                "description": "Measure antenna tuning",
+                "category": "Hardware",
+                "name": "tune"
+            },
+            "version": {
+                "description": "Show version information about the connected Proxmark3",
+                "category": "Hardware",
+                "name": "version"
+            }
+        }
+    },
+    "lf": {
+        "description": "{ Low frequency commands... }",
+        "category": "Technology",
+        "name": "lf",
+        "children": {
+            "awid": {
+                "description": "{ AWID RFIDs... }",
+                "category": "Low Frequency",
+                "name": "awid",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an AWID FSK tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone AWID tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate AWID tag",
+                        "name": "sim"
+                    },
+                    "brute": {
+                        "description": "bruteforce card number against reader",
+                        "name": "brute"
+                    },
+                    "watch": {
+                        "description": "continuously watch for cards. Reader mode",
+                        "name": "watch"
+                    }
+                }
+            },
+            "cotag": {
+                "description": "{ COTAG CHIPs... }",
+                "category": "Low Frequency",
+                "name": "cotag",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an COTAG tag",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    }
+                }
+            },
+            "destron": {
+                "description": "{ FDX-A Destron RFIDs... }",
+                "category": "Low Frequency",
+                "name": "destron",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an Destron tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Destron tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Destron tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "em": {
+                "description": "{ EM CHIPs & RFIDs... }",
+                "category": "Low Frequency",
+                "name": "em",
+                "children": {
+                    "410x": {
+                        "description": "{ EM 4102 commands... }",
+                        "name": "410x",
+                        "children": {
+                            "demod": {
+                                "description": "demodulate a EM410x tag from the GraphBuffer",
+                                "name": "demod"
+                            },
+                            "reader": {
+                                "description": "attempt to read and extract tag data",
+                                "name": "reader"
+                            },
+                            "sim": {
+                                "description": "simulate EM410x tag",
+                                "name": "sim"
+                            },
+                            "brute": {
+                                "description": "reader bruteforce attack by simulating EM410x tags",
+                                "name": "brute"
+                            },
+                            "watch": {
+                                "description": "watches for EM410x 125/134 kHz tags (option 'h' for 134)",
+                                "name": "watch"
+                            },
+                            "spoof": {
+                                "description": "watches for EM410x 125/134 kHz tags, and replays them. (option 'h' for 134)",
+                                "name": "spoof"
+                            },
+                            "clone": {
+                                "description": "write EM410x UID to T55x7 or Q5/T5555 tag",
+                                "name": "clone"
+                            }
+                        }
+                    },
+                    "4x05": {
+                        "description": "{ EM 4205 / 4305 / 4369 / 4469 commands... }",
+                        "name": "4x05",
+                        "children": {
+                            "brute": {
+                                "description": "Bruteforce password",
+                                "name": "brute"
+                            },
+                            "chk": {
+                                "description": "Check passwords from dictionary",
+                                "name": "chk"
+                            },
+                            "demod": {
+                                "description": "demodulate a EM4x05/EM4x69 tag from the GraphBuffer",
+                                "name": "demod"
+                            },
+                            "dump": {
+                                "description": "dump EM4x05/EM4x69 tag",
+                                "name": "dump"
+                            },
+                            "info": {
+                                "description": "tag information EM4x05/EM4x69",
+                                "name": "info"
+                            },
+                            "read": {
+                                "description": "read word data from EM4x05/EM4x69",
+                                "name": "read"
+                            },
+                            "sniff": {
+                                "description": "Attempt to recover em4x05 commands from sample buffer",
+                                "name": "sniff"
+                            },
+                            "unlock": {
+                                "description": "execute tear off against EM4x05/EM4x69",
+                                "name": "unlock"
+                            },
+                            "wipe": {
+                                "description": "wipe EM4x05/EM4x69 tag",
+                                "name": "wipe"
+                            },
+                            "write": {
+                                "description": "write word data to EM4x05/EM4x69",
+                                "name": "write"
+                            }
+                        }
+                    },
+                    "4x50": {
+                        "description": "{ EM 4350 / 4450 commands... }",
+                        "name": "4x50",
+                        "children": {
+                            "brute": {
+                                "description": "Simple bruteforce attack to find password",
+                                "category": "operations",
+                                "name": "brute"
+                            },
+                            "chk": {
+                                "description": "Check passwords from dictionary",
+                                "category": "operations",
+                                "name": "chk"
+                            },
+                            "dump": {
+                                "description": "Dump EM4x50 tag",
+                                "category": "operations",
+                                "name": "dump"
+                            },
+                            "info": {
+                                "description": "Tag information",
+                                "category": "operations",
+                                "name": "info"
+                            },
+                            "login": {
+                                "description": "Login into EM4x50 tag",
+                                "category": "operations",
+                                "name": "login"
+                            },
+                            "rdbl": {
+                                "description": "Read EM4x50 word data",
+                                "category": "operations",
+                                "name": "rdbl"
+                            },
+                            "reader": {
+                                "description": "Show standard read mode data",
+                                "category": "operations",
+                                "name": "reader"
+                            },
+                            "restore": {
+                                "description": "Restore EM4x50 dump to tag",
+                                "category": "operations",
+                                "name": "restore"
+                            },
+                            "wrbl": {
+                                "description": "Write EM4x50 word data",
+                                "category": "operations",
+                                "name": "wrbl"
+                            },
+                            "wrpwd": {
+                                "description": "Change EM4x50 password",
+                                "category": "operations",
+                                "name": "wrpwd"
+                            },
+                            "wipe": {
+                                "description": "Wipe EM4x50 tag",
+                                "category": "operations",
+                                "name": "wipe"
+                            },
+                            "eload": {
+                                "description": "Upload EM4x50 dump to emulator memory",
+                                "category": "simulation",
+                                "name": "eload"
+                            },
+                            "esave": {
+                                "description": "Save emulator memory to file",
+                                "category": "simulation",
+                                "name": "esave"
+                            },
+                            "eview": {
+                                "description": "View EM4x50 content in emulator memory",
+                                "category": "simulation",
+                                "name": "eview"
+                            },
+                            "sim": {
+                                "description": "Simulate EM4x50 tag",
+                                "category": "simulation",
+                                "name": "sim"
+                            }
+                        }
+                    },
+                    "4x70": {
+                        "description": "{ EM 4070 / 4170 commands... }",
+                        "name": "4x70",
+                        "children": {
+                            "info": {
+                                "description": "Tag information EM4x70",
+                                "name": "info"
+                            },
+                            "write": {
+                                "description": "Write EM4x70",
+                                "name": "write"
+                            },
+                            "unlock": {
+                                "description": "Unlock EM4x70 for writing",
+                                "name": "unlock"
+                            },
+                            "auth": {
+                                "description": "Authenticate EM4x70",
+                                "name": "auth"
+                            },
+                            "writepin": {
+                                "description": "Write PIN",
+                                "name": "writepin"
+                            },
+                            "writekey": {
+                                "description": "Write Crypt Key",
+                                "name": "writekey"
+                            }
+                        }
+                    }
+                }
+            },
+            "fdxb": {
+                "description": "{ FDX-B RFIDs... }",
+                "category": "Low Frequency",
+                "name": "fdxb",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a FDX-B ISO11784/85 tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read at 134kHz and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone animal ID tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Animal ID tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "gallagher": {
+                "description": "{ GALLAGHER RFIDs... }",
+                "category": "Low Frequency",
+                "name": "gallagher",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an GALLAGHER tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone GALLAGHER tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate GALLAGHER tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "gproxii": {
+                "description": "{ Guardall Prox II RFIDs... }",
+                "category": "Low Frequency",
+                "name": "gproxii",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a G Prox II tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Guardall tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Guardall tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "hid": {
+                "description": "{ HID Prox RFIDs... }",
+                "category": "Low Frequency",
+                "name": "hid",
+                "children": {
+                    "demod": {
+                        "description": "demodulate HID Prox tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone HID tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate HID tag",
+                        "name": "sim"
+                    },
+                    "brute": {
+                        "description": "bruteforce card number against reader",
+                        "name": "brute"
+                    },
+                    "watch": {
+                        "description": "continuously watch for cards. Reader mode",
+                        "name": "watch"
+                    }
+                }
+            },
+            "hitag": {
+                "description": "{ Hitag CHIPs... }",
+                "category": "Low Frequency",
+                "name": "hitag",
+                "children": {
+                    "eload": {
+                        "description": "Load Hitag dump file into emulator memory",
+                        "name": "eload"
+                    },
+                    "list": {
+                        "description": "List Hitag trace history",
+                        "name": "list"
+                    },
+                    "info": {
+                        "description": "Tag information",
+                        "name": "info"
+                    },
+                    "reader": {
+                        "description": "Act like a Hitag reader",
+                        "name": "reader"
+                    },
+                    "sim": {
+                        "description": "Simulate Hitag transponder",
+                        "name": "sim"
+                    },
+                    "sniff": {
+                        "description": "Eavesdrop Hitag communication",
+                        "name": "sniff"
+                    },
+                    "writer": {
+                        "description": "Act like a Hitag writer",
+                        "name": "writer"
+                    },
+                    "dump": {
+                        "description": "Dump Hitag2 tag",
+                        "name": "dump"
+                    },
+                    "cc": {
+                        "description": "Test all challenges",
+                        "name": "cc"
+                    }
+                }
+            },
+            "idteck": {
+                "description": "{ Idteck RFIDs... }",
+                "category": "Low Frequency",
+                "name": "idteck",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an Idteck tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Idteck tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Idteck tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "indala": {
+                "description": "{ Indala RFIDs... }",
+                "category": "Low Frequency",
+                "name": "indala",
+                "children": {
+                    "demod": {
+                        "description": "Demodulate an Indala tag (PSK1) from GraphBuffer",
+                        "name": "demod"
+                    },
+                    "altdemod": {
+                        "description": "Alternative method to demodulate samples for Indala 64 bit UID (option '224' for 224 bit)",
+                        "name": "altdemod"
+                    },
+                    "reader": {
+                        "description": "Read an Indala tag from the antenna",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "Clone Indala tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "Simulate Indala tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "io": {
+                "description": "{ ioProx RFIDs... }",
+                "category": "Low Frequency",
+                "name": "io",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an ioProx tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone ioProx tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate ioProx tag",
+                        "name": "sim"
+                    },
+                    "watch": {
+                        "description": "continuously watch for cards. Reader mode",
+                        "name": "watch"
+                    }
+                }
+            },
+            "jablotron": {
+                "description": "{ Jablotron RFIDs... }",
+                "category": "Low Frequency",
+                "name": "jablotron",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an Jablotron tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone jablotron tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate jablotron tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "keri": {
+                "description": "{ KERI RFIDs... }",
+                "category": "Low Frequency",
+                "name": "keri",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an KERI tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone KERI tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate KERI tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "motorola": {
+                "description": "{ Motorola RFIDs... }",
+                "category": "Low Frequency",
+                "name": "motorola",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an MOTOROLA tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone MOTOROLA tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate MOTOROLA tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "nedap": {
+                "description": "{ Nedap RFIDs... }",
+                "category": "Low Frequency",
+                "name": "nedap",
+                "children": {
+                    "demod": {
+                        "description": "demodulate Nedap tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Nedap tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Nedap tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "nexwatch": {
+                "description": "{ NexWatch RFIDs... }",
+                "category": "Low Frequency",
+                "name": "nexwatch",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a NexWatch tag (nexkey, quadrakey) from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone NexWatch tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate NexWatch tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "noralsy": {
+                "description": "{ Noralsy RFIDs... }",
+                "category": "Low Frequency",
+                "name": "noralsy",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an Noralsy tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Noralsy tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Noralsy tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "pac": {
+                "description": "{ PAC/Stanley RFIDs... }",
+                "category": "Low Frequency",
+                "name": "pac",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a PAC tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone PAC tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate PAC tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "paradox": {
+                "description": "{ Paradox RFIDs... }",
+                "category": "Low Frequency",
+                "name": "paradox",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a Paradox FSK tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone paradox tag",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate paradox tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "pcf7931": {
+                "description": "{ PCF7931 CHIPs... }",
+                "category": "Low Frequency",
+                "name": "pcf7931",
+                "children": {
+                    "reader": {
+                        "description": "Read content of a PCF7931 transponder",
+                        "name": "reader"
+                    },
+                    "write": {
+                        "description": "Write data on a PCF7931 transponder.",
+                        "name": "write"
+                    },
+                    "config": {
+                        "description": "Configure the password, the tags initialization delay and time offsets (optional)",
+                        "name": "config"
+                    }
+                }
+            },
+            "presco": {
+                "description": "{ Presco RFIDs... }",
+                "category": "Low Frequency",
+                "name": "presco",
+                "children": {
+                    "demod": {
+                        "description": "demodulate Presco tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone presco tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate presco tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "pyramid": {
+                "description": "{ Farpointe/Pyramid RFIDs... }",
+                "category": "Low Frequency",
+                "name": "pyramid",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a Pyramid FSK tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone pyramid tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate pyramid tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "securakey": {
+                "description": "{ Securakey RFIDs... }",
+                "category": "Low Frequency",
+                "name": "securakey",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an Securakey tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Securakey tag to T55x7",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Securakey tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "ti": {
+                "description": "{ TI CHIPs... }",
+                "category": "Low Frequency",
+                "name": "ti",
+                "children": {
+                    "demod": {
+                        "description": "Demodulate raw bits for TI LF tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "Read and decode a TI 134 kHz tag",
+                        "name": "reader"
+                    },
+                    "write": {
+                        "description": "Write new data to a r/w TI 134 kHz tag",
+                        "name": "write"
+                    }
+                }
+            },
+            "t55xx": {
+                "description": "{ T55xx CHIPs... }",
+                "category": "Low Frequency",
+                "name": "t55xx",
+                "children": {
+                    "clonehelp": {
+                        "description": "Shows the available clone commands",
+                        "category": "operations",
+                        "name": "clonehelp"
+                    },
+                    "config": {
+                        "description": "Set/Get T55XX configuration (modulation, inverted, offset, rate)",
+                        "category": "operations",
+                        "name": "config"
+                    },
+                    "dangerraw": {
+                        "description": "Sends raw bitstream. Dangerous, do not use!!",
+                        "category": "operations",
+                        "name": "dangerraw"
+                    },
+                    "detect": {
+                        "description": "Try detecting the tag modulation from reading the configuration block",
+                        "category": "operations",
+                        "name": "detect"
+                    },
+                    "deviceconfig": {
+                        "description": "Set/Get T55XX device configuration",
+                        "category": "operations",
+                        "name": "deviceconfig"
+                    },
+                    "dump": {
+                        "description": "Dump T55xx card Page 0 block 0-7",
+                        "category": "operations",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Show T55x7 configuration data (page 0/ blk 0)",
+                        "category": "operations",
+                        "name": "info"
+                    },
+                    "p1detect": {
+                        "description": "Try detecting if this is a t55xx tag by reading page 1",
+                        "category": "operations",
+                        "name": "p1detect"
+                    },
+                    "read": {
+                        "description": "Read T55xx block data",
+                        "category": "operations",
+                        "name": "read"
+                    },
+                    "resetread": {
+                        "description": "Send Reset Cmd then lf read the stream to attempt to identify the start of it",
+                        "category": "operations",
+                        "name": "resetread"
+                    },
+                    "restore": {
+                        "description": "Restore T55xx card Page 0 / Page 1 blocks",
+                        "category": "operations",
+                        "name": "restore"
+                    },
+                    "trace": {
+                        "description": "Show T55x7 traceability data (page 1/ blk 0-1)",
+                        "category": "operations",
+                        "name": "trace"
+                    },
+                    "wakeup": {
+                        "description": "Send AOR wakeup command",
+                        "category": "operations",
+                        "name": "wakeup"
+                    },
+                    "write": {
+                        "description": "Write T55xx block data",
+                        "category": "operations",
+                        "name": "write"
+                    },
+                    "bruteforce": {
+                        "description": "Simple bruteforce attack to find password",
+                        "category": "recovery",
+                        "name": "bruteforce"
+                    },
+                    "chk": {
+                        "description": "Check passwords from dictionary/flash",
+                        "category": "recovery",
+                        "name": "chk"
+                    },
+                    "protect": {
+                        "description": "Password protect tag",
+                        "category": "recovery",
+                        "name": "protect"
+                    },
+                    "recoverpw": {
+                        "description": "Try to recover from bad password write from a cloner",
+                        "category": "recovery",
+                        "name": "recoverpw"
+                    },
+                    "sniff": {
+                        "description": "Attempt to recover T55xx commands from sample buffer",
+                        "category": "recovery",
+                        "name": "sniff"
+                    },
+                    "special": {
+                        "description": "Show block changes with 64 different offsets",
+                        "category": "recovery",
+                        "name": "special"
+                    },
+                    "wipe": {
+                        "description": "Wipe a T55xx tag and set defaults (will destroy any data on tag)",
+                        "category": "recovery",
+                        "name": "wipe"
+                    }
+                }
+            },
+            "viking": {
+                "description": "{ Viking RFIDs... }",
+                "category": "Low Frequency",
+                "name": "viking",
+                "children": {
+                    "demod": {
+                        "description": "demodulate a Viking tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Viking tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Viking tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "visa2000": {
+                "description": "{ Visa2000 RFIDs... }",
+                "category": "Low Frequency",
+                "name": "visa2000",
+                "children": {
+                    "demod": {
+                        "description": "demodulate an VISA2000 tag from the GraphBuffer",
+                        "name": "demod"
+                    },
+                    "reader": {
+                        "description": "attempt to read and extract tag data",
+                        "name": "reader"
+                    },
+                    "clone": {
+                        "description": "clone Visa2000 tag to T55x7 or Q5/T5555",
+                        "name": "clone"
+                    },
+                    "sim": {
+                        "description": "simulate Visa2000 tag",
+                        "name": "sim"
+                    }
+                }
+            },
+            "config": {
+                "description": "Get/Set config for LF sampling, bit/sample, decimation, frequency",
+                "category": "General",
+                "name": "config"
+            },
+            "cmdread": {
+                "description": "Modulate LF reader field to send command before read",
+                "category": "General",
+                "name": "cmdread"
+            },
+            "read": {
+                "description": "Read LF tag",
+                "category": "General",
+                "name": "read"
+            },
+            "search": {
+                "description": "Read and Search for valid known tag",
+                "category": "General",
+                "name": "search"
+            },
+            "sim": {
+                "description": "Simulate LF tag from buffer",
+                "category": "General",
+                "name": "sim"
+            },
+            "simask": {
+                "description": "Simulate ASK tag",
+                "category": "General",
+                "name": "simask"
+            },
+            "simfsk": {
+                "description": "Simulate FSK tag",
+                "category": "General",
+                "name": "simfsk"
+            },
+            "simpsk": {
+                "description": "Simulate PSK tag",
+                "category": "General",
+                "name": "simpsk"
+            },
+            "simbidir": {
+                "description": "Simulate LF tag (with bidirectional data transmission between reader and tag)",
+                "category": "General",
+                "name": "simbidir"
+            },
+            "sniff": {
+                "description": "Sniff LF traffic between reader and tag",
+                "category": "General",
+                "name": "sniff"
+            },
+            "tune": {
+                "description": "Continuously measure LF antenna tuning",
+                "category": "General",
+                "name": "tune"
+            }
+        }
+    },
+    "mem": {
+        "description": "{ Flash memory manipulation... }",
+        "category": "Technology",
+        "name": "mem",
+        "children": {
+            "spiffs": {
+                "description": "{ SPI File system }",
+                "name": "spiffs",
+                "children": {
+                    "copy": {
+                        "description": "Copy a file to another (destructively) in SPIFFS file system",
+                        "name": "copy"
+                    },
+                    "check": {
+                        "description": "Check/try to defrag faulty/fragmented file system",
+                        "name": "check"
+                    },
+                    "dump": {
+                        "description": "Dump a file from SPIFFS file system",
+                        "name": "dump"
+                    },
+                    "info": {
+                        "description": "Print file system info and usage statistics",
+                        "name": "info"
+                    },
+                    "mount": {
+                        "description": "Mount the SPIFFS file system if not already mounted",
+                        "name": "mount"
+                    },
+                    "remove": {
+                        "description": "Remove a file from SPIFFS file system",
+                        "name": "remove"
+                    },
+                    "rename": {
+                        "description": "Rename/move a file in SPIFFS file system",
+                        "name": "rename"
+                    },
+                    "test": {
+                        "description": "Test SPIFFS Operations",
+                        "name": "test"
+                    },
+                    "tree": {
+                        "description": "Print the Flash memory file system tree",
+                        "name": "tree"
+                    },
+                    "unmount": {
+                        "description": "Un-mount the SPIFFS file system",
+                        "name": "unmount"
+                    },
+                    "upload": {
+                        "description": "Upload file into SPIFFS file system",
+                        "name": "upload"
+                    },
+                    "view": {
+                        "description": "View file on SPIFFS file system",
+                        "name": "view"
+                    },
+                    "wipe": {
+                        "description": "Wipe all files from SPIFFS file system * dangerous *",
+                        "name": "wipe"
+                    }
+                }
+            },
+            "baudrate": {
+                "description": "Set Flash memory Spi baudrate",
+                "name": "baudrate"
+            },
+            "dump": {
+                "description": "Dump data from flash memory",
+                "name": "dump"
+            },
+            "info": {
+                "description": "Flash memory information",
+                "name": "info"
+            },
+            "load": {
+                "description": "Load data to flash memory",
+                "name": "load"
+            },
+            "wipe": {
+                "description": "Wipe data from flash memory",
+                "name": "wipe"
+            }
+        }
+    },
+    "nfc": {
+        "description": "{ NFC commands... }",
+        "category": "Technology",
+        "name": "nfc",
+        "children": {
+            "type1": {
+                "description": "{ NFC Forum Tag Type 1... }",
+                "category": "NFC Tags",
+                "name": "type1",
+                "children": {
+                    "read": {
+                        "description": "read NFC Forum Tag Type 1",
+                        "category": "NFC Forum Tag Type 1",
+                        "name": "read"
+                    }
+                }
+            },
+            "type2": {
+                "description": "{ NFC Forum Tag Type 2... }",
+                "category": "NFC Tags",
+                "name": "type2",
+                "children": {
+                    "read": {
+                        "description": "read NFC Forum Tag Type 2",
+                        "category": "NFC Forum Tag Type 2",
+                        "name": "read"
+                    }
+                }
+            },
+            "type4a": {
+                "description": "{ NFC Forum Tag Type 4 ISO14443A... }",
+                "category": "NFC Tags",
+                "name": "type4a",
+                "children": {
+                    "read": {
+                        "description": "read NFC Forum Tag Type 4 A",
+                        "category": "NFC Forum Tag Type 4 ISO14443A",
+                        "name": "read"
+                    },
+                    "st25taread": {
+                        "description": "read ST25TA as NFC Forum Tag Type 4",
+                        "category": "NFC Forum Tag Type 4 ISO14443A",
+                        "name": "st25taread"
+                    }
+                }
+            },
+            "type4b": {
+                "description": "{ NFC Forum Tag Type 4 ISO14443B... }",
+                "category": "NFC Tags",
+                "name": "type4b",
+                "children": {
+                    "read": {
+                        "description": "read NFC Forum Tag Type 4 B",
+                        "category": "NFC Forum Tag Type 4 ISO14443B",
+                        "name": "read"
+                    }
+                }
+            },
+            "mf": {
+                "description": "{ NFC Type MIFARE Classic/Plus Tag... }",
+                "category": "NFC Tags",
+                "name": "mf",
+                "children": {
+                    "cread": {
+                        "description": "read NFC Type MIFARE Classic Tag",
+                        "category": "NFC Type MIFARE Classic/Plus Tag",
+                        "name": "cread"
+                    },
+                    "pread": {
+                        "description": "read NFC Type MIFARE Plus Tag",
+                        "category": "NFC Type MIFARE Classic/Plus Tag",
+                        "name": "pread"
+                    }
+                }
+            },
+            "barcode": {
+                "description": "{ NFC Barcode Tag... }",
+                "category": "NFC Tags",
+                "name": "barcode",
+                "children": {
+                    "read": {
+                        "description": "read NFC Barcode",
+                        "category": "NFC Barcode",
+                        "name": "read"
+                    },
+                    "sim": {
+                        "description": "simulate NFC Barcode",
+                        "category": "NFC Barcode",
+                        "name": "sim"
+                    }
+                }
+            },
+            "decode": {
+                "description": "Decode NDEF records",
+                "category": "General",
+                "name": "decode"
+            }
+        }
+    },
+    "smart": {
+        "description": "{ Smart card ISO-7816 commands... }",
+        "category": "Technology",
+        "name": "smart",
+        "children": {
+            "list": {
+                "description": "List ISO 7816 history",
+                "name": "list"
+            },
+            "info": {
+                "description": "Tag information",
+                "name": "info"
+            },
+            "reader": {
+                "description": "Act like an IS07816 reader",
+                "name": "reader"
+            },
+            "raw": {
+                "description": "Send raw hex data to tag",
+                "name": "raw"
+            },
+            "upgrade": {
+                "description": "Upgrade sim module firmware",
+                "name": "upgrade"
+            },
+            "setclock": {
+                "description": "Set clock speed",
+                "name": "setclock"
+            },
+            "brute": {
+                "description": "Bruteforce SFI",
+                "name": "brute"
+            }
+        }
+    },
+    "script": {
+        "description": "{ Scripting commands... }",
+        "category": "Technology",
+        "name": "script",
+        "children": {
+            "list": {
+                "description": "List available scripts",
+                "name": "list"
+            },
+            "run": {
+                "description": "<name> - execute a script",
+                "name": "run"
+            }
+        }
+    },
+    "trace": {
+        "description": "{ Trace manipulation... }",
+        "category": "Technology",
+        "name": "trace",
+        "children": {
+            "list": {
+                "description": "List protocol data in trace buffer",
+                "name": "list"
+            },
+            "load": {
+                "description": "Load trace from file",
+                "name": "load"
+            },
+            "save": {
+                "description": "Save trace buffer to file",
+                "name": "save"
+            }
+        }
+    },
+    "usart": {
+        "description": "{ USART commands... }",
+        "category": "Technology",
+        "name": "usart",
+        "children": {
+            "btpin": {
+                "description": "Change BT add-on PIN",
+                "name": "btpin"
+            },
+            "btfactory": {
+                "description": "Reset BT add-on to factory settings",
+                "name": "btfactory"
+            }
+        }
+    },
+    "wiegand": {
+        "description": "{ Wiegand format manipulation... }",
+        "category": "Technology",
+        "name": "wiegand",
+        "children": {
+            "list": {
+                "description": "List available wiegand formats",
+                "name": "list"
+            },
+            "encode": {
+                "description": "Encode to wiegand raw hex (currently for HID Prox)",
+                "name": "encode"
+            },
+            "decode": {
+                "description": "Convert raw hex to decoded wiegand format (currently for HID Prox)",
+                "name": "decode"
+            }
+        }
+    },
+    "auto": {
+        "description": "Automated detection process for unknown tags",
+        "category": "General",
+        "name": "auto"
+    },
+    "clear": {
+        "description": "Clear screen",
+        "category": "General",
+        "name": "clear"
+    },
+    "hints": {
+        "description": "Turn hints on / off",
+        "category": "General",
+        "name": "hints"
+    },
+    "msleep": {
+        "description": "Add a pause in milliseconds",
+        "category": "General",
+        "name": "msleep"
+    },
+    "rem": {
+        "description": "Add a text line in log file",
+        "category": "General",
+        "name": "rem"
+    },
+    "quit": {
+        "description": "",
+        "category": "General",
+        "name": "quit"
+    },
+    "exit": {
+        "description": "Exit program",
+        "category": "General",
+        "name": "exit"
+    }
+}

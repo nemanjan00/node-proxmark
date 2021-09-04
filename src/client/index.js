@@ -23,6 +23,7 @@ module.exports = (...args) => {
 
 			const prox = {
 				command: getCommandProxy(),
+				client: client
 			};
 
 			resolve(prox);
