@@ -1,7 +1,7 @@
 let promise = Promise.resolve();
 
 const command = (client, args) => {
-	return (...params) => {
+	return (params) => {
 		const oldPromise = promise;
 		return promise = new Promise((resolve) => {
 			oldPromise.then(() => {
@@ -23,6 +23,8 @@ const command = (client, args) => {
 				client.on("line", listener);
 
 				client.on("command_end", endListener);
+
+				console.log(command);
 
 				client.emit("command", {
 					command

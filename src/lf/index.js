@@ -12,10 +12,9 @@ module.exports = clientPromise => {
 			return new Promise((resolve, reject) => {
 				clientPromise.then(client => {
 					client.command.lf.search.exec().then(output => {
-						console.log(output);
 						const card = lf.parse(output);
 
-						console.log(card);
+						resolve(card);
 					});
 				});
 			});
@@ -41,11 +40,35 @@ module.exports = clientPromise => {
 				return card;
 			}
 
-			const cardType = typeCard();
+			const cardType = typeCard(client);
 
 			cardType.parse(output, card);
 
 			return card;
+		},
+
+		write: (card, sourceCard) => {
+			return new Promise((resolve, reject) => {
+				clientPromise.then(client => {
+					const typeCard = typeMap[card.type];
+
+					if(typeCard === undefined) {
+						return Promise.reject(`Unknown destination card ${card.type}`);
+					}
+
+					const cardType = typeCard(client);
+
+					cardType.write(card, sourceCard).then(() => {
+						lf.search(card => {
+							if(card.id === sourceCard.id) {
+								return resolve();
+							}
+
+							reject("Error writing card ID");
+						})
+					}).catch(reject);
+				});
+			});
 		}
 	};
 

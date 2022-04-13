@@ -1,8 +1,6 @@
 const client = require("../src").client;
 const command = require("../src/command");
 
-const path = require("path");
-
 client(process.env.PM3).then(client => {
 	const parser = {
 		parseCommandList: (tree) => {
