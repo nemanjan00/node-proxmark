@@ -3,9 +3,7 @@ const command = require("../src/command");
 
 const path = require("path");
 
-const proxmarkClientPath = path.resolve(__dirname ,"../../pm-alpha/pm3");
-
-client(proxmarkClientPath).then(client => {
+client(process.env.PM3).then(client => {
 	const parser = {
 		parseCommandList: (tree) => {
 			return new Promise((resolve, reject) => {
@@ -38,6 +36,10 @@ client(proxmarkClientPath).then(client => {
 							}
 
 							const commandDescription = command.join(" ");
+
+							if(commandName === undefined) {
+								return;
+							}
 
 							if(commandName[0] == "-") {
 								category = commandDescription.split("-").join("").trim();
